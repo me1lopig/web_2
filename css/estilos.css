@@ -1,0 +1,424 @@
+body{
+  /* definicion de los estulos en el archivo de css */
+    background: white; /* color del fondo */
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+  /* Trabajamos en el tamaño de los parrafos  */
+  font-size: 20px;
+}
+
+li{
+  list-style: none; /* lista sin estilo  */
+  margin-right: 15px; /*espaciado a la derecha*/
+
+}
+
+/* definidores de estilo de los elementos del menu */
+/* Colocarlos aqui si hace falta*/
+
+
+
+.menu{
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+ul{
+  display: flex;
+
+}
+
+
+
+.titular{
+text-align: center;
+margin-top: 100px;
+}
+
+
+h1{
+  font-size: 60 px;
+  margin:0;
+}
+
+h2{
+  font-size: 25px;
+  margin-bottom: 20px; /* lo que este debajo baja los pixeles que le digamos*/
+}
+
+
+.a-enlace{ /* boton */
+  font-size: 15px;
+  background: #5cb8ff;
+  padding: 15px 20px 15px 20px; /*top  right bottom left, en este sentido*/
+  color: white;
+
+}
+
+header {
+  background-image: url(../images/fondo.jpg); /*la imagen esta en una carpera del mismo nivel que css*/
+  height: 100vh; /*ocupa toda la pagina*/
+  background-position: center center;  /*centramos la pagina*/
+  background-size: 100% 100%;  /* no deja zonas ocultas*/
+}
+
+.contenedor{
+
+  max-width: 1280px;
+  width: 90%;
+  margin:auto;
+
+}
+
+
+/* Arranca seccion sobre mi como seccion independiente */
+
+h3{
+  text-align: center;
+  font-size: 60px;
+  font-weight: normal;
+  
+}
+
+p{
+  font-weight: bold; /* en negrita */
+}
+
+.contenedorSobremi{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.contenedorParrafoBoton{
+width: 42%;
+
+}
+
+.contenedorParrafoBoton p{
+  font-size: 20px;
+}
+
+.contenedorParrafoBoton a{
+  margin-top: 20px;
+  display: inline-block; /* pasar elementos en linea a bloque */
+}
+
+.contenedor-servicios{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.Servicio{
+  width: 25%;
+  padding: 50px 38px 50px 38px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  color:#fff;
+}
+
+.violeta{
+  background: #5055df;
+}
+
+.celeste{
+  background: #40a8fa;
+}
+.Servicio h4{
+  font-size: 30px;
+  margin: 0;
+}
+
+.Servicio img{
+  float:right;
+}
+
+.Servicio p{
+  font-size: 18px;
+  height: 100px; /* se le da un alto fijo a las cajas de texto */
+}
+
+/*.span{
+
+  font-size: 70px;
+  color:blue;
+
+}*/
+
+.owl-nav{ /* caracteristicas de <> al pie del carrusel */
+  text-align: center;
+  font-size: 40px;
+  color:blue;
+}
+
+.contenedor-porque{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenedor-porque h4{
+  margin: 0;
+  font-size: 20px;
+}
+
+.contenedor-porque p{
+
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.porque-singular{
+
+  width: 30%;
+}
+
+#blog{
+  background:#F9FAFC;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+.publicaciones-contenedor{
+  display: flex;
+  justify-content: space-around;
+}
+
+.publicacion{
+
+  width: 30%;
+  box-shadow: 1px 1px 12px #ccc;
+  padding-bottom: 20px;
+
+}
+
+#blog img{
+
+  width: 100%;
+
+}
+
+#blog h4{
+
+  font-size: 23px;
+  margin: 0;
+  padding: 20px 20px 20px 20px;
+
+}
+
+#blog p {
+
+  color: #5a6169;
+  line-height: 24px;
+  font-size: 16px;
+  padding: 10px 20px 20px 20px;
+  margin: 0;
+}
+
+#blog a{
+
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.publicacion-segunda img{
+height: 245px;
+
+}
+
+.primer-parrafo{
+
+  padding: 0px 20px 20px 20px ! important;
+}
+
+#que-esperas{
+
+  background:linear-gradient(rgba(84,93,220,0.94),rgba(96,171,245,0.9)) ;
+  text-align: center;
+  padding: 50px 0 50px 0;
+
+}
+
+#que-esperas h3{
+  font-size: 23px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+#que-esperas a{
+
+  padding: 15px 45px 15px 45px;
+  transition: 1s;
+}
+
+#que-esperas a:hover{
+  color: black;
+  transition: 1s;
+}
+
+#whatsapp a{
+
+  background: none;
+  position: fixed;
+  top:80%; 
+  right: 1%;
+
+}
+
+
+
+.menu-icon{
+
+  display: none; /* no es visible en modo escritorio 
+  solo en modo celular */
+
+}
+
+
+@media(max-width:800px){
+
+/* se aplica cuando el ancho máximo de ancho es 480px */
+  header{
+    height: 50vh;
+  }
+  nav{
+
+    position: absolute;
+    top:70px;
+    left:0px;
+    background: #5cb8ff;
+    width: 100%;
+    display: none;
+
+  }
+
+  nav .lista{
+
+    flex-direction: column;
+  }
+
+.menu-icon{
+
+  display: block; /* es visible solo para dispositivos celulares */
+  width: 25px;
+}
+.titular{
+
+  margin-top: 54px;
+
+}
+
+h1{
+  font-size: 49px;
+
+}
+
+
+h2{
+  font-size: 19px;
+  ;
+}
+
+.contenedorSobremi{
+
+  flex-direction: column;
+
+}
+
+
+.contenedorParrafoBoton p{
+  font-size: 90%;
+}
+
+.contenedor-servicios{
+
+  flex-direction: column;
+
+}
+
+.Servicio{
+
+  width: 72%;
+  margin: auto;
+  margin-bottom: 15px;
+
+
+}
+
+h3{
+  font-size: 46px;
+
+}
+
+.contenedor-porque{
+
+  flex-direction: column;
+
+}
+
+.porque-singular{
+  width: 95%;
+
+}
+
+
+.publicaciones-contenedor{
+
+  flex-direction: column;
+
+}
+  
+.publicacion{
+
+width: 85;
+margin: auto;
+
+
+}
+
+.imagen-sobremi{
+
+  width: 90%;
+}
+
+
+}
+
+@media(min-width:700px) and (max-width:900px){
+
+  header{
+    height: 53vh;
+  }
+
+  .imagen-sobremi{
+    width:50%;
+  }
+
+
+  .Servicio{
+
+    width: 44%;
+
+  }
+
+
+
+  .publicacion{
+
+    width: 62%;
+    
+  }
+
+
+
+}
